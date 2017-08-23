@@ -62,8 +62,12 @@ All this is all brought together by **teams** with
 ** Security a fundamental property of systems and applications.
 
 *Hands on*
- * Use a secure shell client and connect to `tc.rnet.missouri.edu`
- * Windows users can install MobaXterm (http://missouri.box.com/v/rcss-mobaxterm) or Putty (https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe)
+ * Use a secure shell client and connect to `tc.rnet.missouri.edu` using your pawprint login (SSO) and password.  You must use all lower case for your username and do not include the `@` or anything after it.
+ * The following ssh clients are recommended: 
+   * MobaXterm (https://missouri.app.box.com/rcss-mobaxterm) for Windows, 
+   * Putty (https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe ) for Windows, 
+   * or hterm, the Chrome browser “Secure Shell” extension for Windows, Mac, and Chromebooks (https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo).
+   * Mac users can use the built-in terminal by launching it from Spotlight by hitting `Command + Spacebar` and typing `Terminal` and then return.  To connect to the teaching cluster enter the command `ssh pawprint@tc.rnet.missouri.edu` where `pawprint` is your login (SSO) and enter your password when prompted.
 
 *Homework 0*
   1. Homework 0-1: Using Secure Shell
