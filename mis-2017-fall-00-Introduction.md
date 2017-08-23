@@ -11,7 +11,7 @@ comfortable with information technology.  This is the course for that.
 
 ### Introduction to IT
 
-*Outline*
+#### Outline
  * Welcome and personal introduction
  * Motivation for the class (information technology and computational engineering)
  * Syllabus
@@ -19,14 +19,13 @@ comfortable with information technology.  This is the course for that.
  * What is IT
  * Hands on with secure shell.
 
-*Reading*
+#### Reading
  * Class Syllabus
  * Chapter 1/Introduction of ISBB (https://bus206.pressbooks.com/chapter/chapter-1/)
 
-*Discussion*
+#### Discussion
  * What does IT mean to you?
  * What about technology  things would you like 
-
 
 Information Technology (IT), and by extension Management Information
 Systems (MIS), is the **physical**, **computational**, and **software**,
@@ -61,7 +60,7 @@ All this is all brought together by **teams** with
 
 ** Security a fundamental property of systems and applications.
 
-*Hands on*
+#### Hands on
  * Use a secure shell client and connect to `tc.rnet.missouri.edu` using your pawprint login (SSO) and password.  You must use all lower case for your username and do not include the `@` or anything after it.
  * The following ssh clients are recommended: 
    * MobaXterm (https://missouri.app.box.com/rcss-mobaxterm) for Windows, 
@@ -69,7 +68,7 @@ All this is all brought together by **teams** with
    * or hterm, the Chrome browser “Secure Shell” extension for Windows, Mac, and Chromebooks (https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo).
    * Mac users can use the built-in terminal by launching it from Spotlight by hitting `Command + Spacebar` and typing `Terminal` and then return.  To connect to the teaching cluster enter the command `ssh pawprint@tc.rnet.missouri.edu` where `pawprint` is your login (SSO) and enter your password when prompted.
 
-*Homework 0*
+#### Homework 0
   1. Homework 0-1: Using Secure Shell
      1. Connect to tc.rnet.missouri.edu with your pawprint (SSO) and pawprint password and run the following commands and copy and paste the session (as text).
         1. `hostname`
@@ -78,18 +77,13 @@ All this is all brought together by **teams** with
      1. What are the five components that make up an information system?
      2. Of the five primary components of an information system (hardware, software, data, people, process), which do you think is the most important to the success of a business organization? Write a one-paragraph answer to this question that includes an example from your personal experience to support your answer.
 
-*Discussion 0-1:*
- * What are your first memories of using a computer to do computation (2 points)
-
-
 ### Hardware
 
-*Reading*
+#### Reading
  * Chapter 2/Hardware of ISBB (https://bus206.pressbooks.com/chapter/chapter-2/)
 
-*Hands On*
+#### Hands On
  * We will be passing around various pieces of hardware today.
 
-*Discussion*
+#### Discussion
  * What are bytes, characters (ASCII, Unicode, utf-8), files. (https://www.youtube.com/watch?v=MijmeoH9LT4)
-
