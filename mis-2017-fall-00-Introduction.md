@@ -1,4 +1,4 @@
-# IMSE 4410/7410 Management Information Systems (MIS)
+# IMSE 4410/7410 Management Information Systems Design (MIS)
 
 Material Copyright 2017 by Timothy Middelkoop.
 Source code licensed under the Apache License, Version 2.0. 
