@@ -66,13 +66,13 @@ All this is all brought together by **teams** with
  * Windows users can install MobaXterm (http://missouri.box.com/v/rcss-mobaxterm) or Putty (https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe)
 
 *Homework 0*
- 1. Homework 0-1: Using Secure Shell
-   1. Connect to tc.rnet.missouri.edu with your pawprint (SSO) and pawprint password and run the following commands and copy and paste the session (as text).
-     1. `hostname`
-     1. `whoami |sum`
- 2. Homework 0-2: What is an information system?
-   1. What are the five components that make up an information system?
-   2. Of the five primary components of an information system (hardware, software, data, people, process), which do you think is the most important to the success of a business organization? Write a one-paragraph answer to this question that includes an example from your personal experience to support your answer.
+  1. Homework 0-1: Using Secure Shell
+     1. Connect to tc.rnet.missouri.edu with your pawprint (SSO) and pawprint password and run the following commands and copy and paste the session (as text).
+        1. `hostname`
+        1. `whoami |sum`
+  2. Homework 0-2: What is an information system?
+     1. What are the five components that make up an information system?
+     2. Of the five primary components of an information system (hardware, software, data, people, process), which do you think is the most important to the success of a business organization? Write a one-paragraph answer to this question that includes an example from your personal experience to support your answer.
 
 *Discussion 0-1:*
  * What are your first memories of using a computer to do computation (2 points)
