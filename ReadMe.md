@@ -10,7 +10,8 @@ Documentation licensed under CC by SA 3.0.
 2. Technology (1,2,3 Solve): 1. Hello - get the technology working. 2. Textbook Example - do something easy. 3. Benchmark and reference problems (Assignment)
 3. Engineering: Solve a problem (Assignment or Project).
 
-## Reference Material
+## Resources
+ * Basic MIS text https://bus206.pressbooks.com/
  * Contemporary Topics https://www.oreilly.com/learning
  * Git https://git-scm.com/book/en/v2
  * Networking http://intronetworks.cs.luc.edu/current/ComputerNetworks.pdf
