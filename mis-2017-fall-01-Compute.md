@@ -20,7 +20,7 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
  * Interactive video data-center tour.
 
 ## Software
-*[2018-08-28](#2018-08-28)*
+*[2018-08-30](#2018-08-30)*
 
 ### Reading
  * ISBB Chapter 3 - Software (https://bus206.pressbooks.com/chapter/chapter-3/)
