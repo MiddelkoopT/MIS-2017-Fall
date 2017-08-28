@@ -7,7 +7,7 @@ Source code licensed under the Apache License, Version 2.0.
 Documentation licensed under CC by SA 3.0.
 
 ## Introduction to MIS 
-**[2017-08-23](#2017-08-23)**
+*[2017-08-23](#introduction-to-mis)*
 
 So you want to be an Engineer. You need to use, understand, and be
 comfortable with information technology.  This is the course for that.
@@ -40,7 +40,7 @@ comfortable with information technology.  This is the course for that.
  * ISBB Chapter 1 - Introduction (https://bus206.pressbooks.com/chapter/chapter-1/)
 
 ### Discussion 
-*[2017-08-28](#2017-08-28)*
+*[2017-08-28](#discussion)*
 
  * What does IT mean to you?
  * What about technology things would you like to know about?
