@@ -8,8 +8,7 @@ Documentation licensed under CC by SA 3.0.
 
 In Module 1 we cover basic Information Technology (IT) Architecture and IT paradigms.
 
-## Hardware
-*[2018-08-28](#2018-08-28)*
+## Hardware [2018-08-28]
 
 ### Reading
  * ISBB Chapter 2 - Hardware (https://bus206.pressbooks.com/chapter/chapter-2/)
