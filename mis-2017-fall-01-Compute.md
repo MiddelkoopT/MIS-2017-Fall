@@ -19,6 +19,10 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
  * We will be passing around various pieces of hardware today.
  * Interactive video data-center tour.
 
+### Reference
+ * ASCII https://en.wikipedia.org/wiki/ASCII
+ * UTF-8/Unicode http://www.fileformat.info/info/charset/UTF-8/list.htm
+
 ## Software
 *[2018-08-30](#software)*
 
