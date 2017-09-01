@@ -29,6 +29,23 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
 ## Hands On
  * We will be exploring the Linux operating system using the Software Carpentry lesson on the Unix Shell (Linux)
 
-## Homework
- * Software Carpentry: Linux Shell (http://swcarpentry.github.io/shell-novice/) section 4-5.
+## Homework 1
+  This homework will help you prepare for future homework.  A basic ability to work with the Linux shell will be a fundamental skill required in this class.
+  
+  1. Homework 1-1: Linux Shell
+     1. Connect to the teaching cluster `tc.rnet.missour.edu`
+     2. Create a series of folders to store and organize your class work, one of which will be for this class.
+     3. In the class folder create a folder called 'module-1' and a sub-folder called 'linux-shell'
+     4. In this folder create a file called 'ReadMe.txt' and in and edit some text about this class.
+     5. Create an empty file called 'Homework-1-1.txt' that contains your submission for this homework.
+	 6. Make sure that your homework is not readable by your classmates (hint: file permissions).
+	 7. Place your answers to the following questions/tasks in the 'Homework-1-1.txt' file and paste the results into the class assignment for this homework.
+		1. Demonstrate (through the use of commands and their output) that your created the folders and files properly. Do not show 'how' they were created (for example the use of the `mkdir`command), show that they are indeed there.
+		2. Show that your class files are not readable by anyone else but you.
+		3. Demonstrate the use of the command `grep` on the file 'Homework-1-1.txt'
+		4. Demonstrate the use of a pipe (`|`) with `grep`, `wc` or some other command.
+		6. Demonstrate the use of some other command on your files.
+
+
+
 
