@@ -36,19 +36,19 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
 ### Homework
   This homework will help you prepare for future homework.  A basic ability to work with the Linux shell will be a fundamental skill required in this class.
   
-  * Homework 1-1: Linux Shell
-    1. Connect to the teaching cluster `tc.rnet.missour.edu`
-    2. Create a series of folders to store and organize your class work, one of which will be for this class.
-    3. In the class folder create a folder called 'module-1' and a sub-folder called 'linux-shell'
-    4. In the class folder create a file called 'ReadMe.txt' and in and edit some text about this class.
-    5. Create an empty file called 'Homework-1-1.txt' in the 'linux-shell' folder that will contain your submission for this homework.
-    6. Make sure that your homework is not readable by your classmates (hint: file permissions).
-    7. Place your answers to the following questions/tasks in the 'Homework-1-1.txt' file and copy the results into the class assignment for this homework.  Please copy the command (including the prompt) and the result.  You must copy and paste text and not use screen captures (images).
-       1. Demonstrate (through the use of commands and their output) that your created the folders and files properly. Do not show 'how' they were created (for example the use of the `mkdir`command), show that they are indeed there.
-       2. Show that your class files are not readable by anyone else but you.
-       3. Demonstrate the use of the command `grep` on the file 'ReadMe.txt'
-       4. Demonstrate the use of a pipe (`|`) with `grep`, `wc` or some other command.
-       6. Demonstrate the use of some other command on your files.
+  1. Homework 1-1: Linux Shell
+     1. Connect to the teaching cluster `tc.rnet.missour.edu`
+     2. Create a series of folders to store and organize your class work, one of which will be for this class.
+     3. In the class folder create a folder called 'module-1' and a sub-folder called 'linux-shell'
+     4. In the class folder create a file called 'ReadMe.txt' and in and edit some text about this class.
+     5. Create an empty file called 'Homework-1-1.txt' in the 'linux-shell' folder that will contain your submission for this homework.
+     6. Make sure that your homework is not readable by your classmates (hint: file permissions).
+     7. Place your answers to the following questions/tasks in the 'Homework-1-1.txt' file and copy the results into the class assignment for this homework.  Please copy the command (including the prompt) and the result.  You must copy and paste text and not use screen captures (images).
+        1. Demonstrate (through the use of commands and their output) that your created the folders and files properly. Do not show 'how' they were created (for example the use of the `mkdir`command), show that they are indeed there.
+        2. Show that your class files are not readable by anyone else but you.
+        3. Demonstrate the use of the command `grep` on the file 'ReadMe.txt'
+        4. Demonstrate the use of a pipe (`|`) with `grep`, `wc` or some other command.
+        6. Demonstrate the use of some other command on your files.
 
 
 ## Networking
@@ -74,8 +74,9 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
 ## Community (gitlabs)
 
 ### Reading
- * http://swcarpentry.github.io/git-novice/
- * https://git-scm.com/book/en/v2
+Read the introduction material and as much as you wish, we will be covering this in depth later but skim through it for interesting and basic material.
+ * Software Carpentry Git Lesson http://swcarpentry.github.io/git-novice/ 
+ * Pro Git book https://git-scm.com/book/en/v2
 
 ### Hands-On 
 
@@ -121,13 +122,13 @@ where `git@vcs.missouri.edu:middelkoopt/welcome.git` is the pasted from the step
 ### Homework
 Using the hands-on instructions and the documentation complete the following homework:
 
- * Homework 1-1: gitlabs
-   1. Create a repository on https://vcs.missouri.edu called mis-pawprint-first-last as described in the Hands-On section.
-   2. Assign "Guest" permissions to `@middelkoopt` and `@mjxqb` to the project
-   3. Create a `ReadMe.txt` file and commit it to the repository (note the upper/lower case and spelling).
-   4. Clone the repository on `tc.rnet.missouri.edu`
-   5. Bonus: Modify the ReadMe.txt on `tc.rnet.missouri.edu` and push it back to `vcs.missouri.edu`.
-
+ 1. Homework 1-1: gitlabs
+    1. Create a repository on https://vcs.missouri.edu called mis-pawprint-first-last as described in the Hands-On section.
+    2. Assign "Guest" permissions to `@middelkoopt` and `@mjxqb` to the project
+    3. Create a `ReadMe.txt` file and commit it to the repository (note the upper/lower case and spelling).
+    4. Clone the repository on `tc.rnet.missouri.edu`
+    5. Bonus: Modify the ReadMe.txt on `tc.rnet.missouri.edu` and push it back to `vcs.missouri.edu`.
 
 ### References
- * GitHub https://git-scm.com/book/en/v2
+ * Pro Git book https://git-scm.com/book/en/v2
+ * Software Carpentry - Git  http://swcarpentry.github.io/git-novice/
