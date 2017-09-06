@@ -30,10 +30,10 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
  * ISBB Chapter 3 - Software (https://bus206.pressbooks.com/chapter/chapter-3/)
  * Software Carpentry: Linux Shell (http://swcarpentry.github.io/shell-novice/) sections 1-3
 
-## Hands On
+### Hands On
  * We will be exploring the Linux operating system using the Software Carpentry lesson on the Unix Shell (Linux)
 
-## Homework 1
+### Homework 1
   This homework will help you prepare for future homework.  A basic ability to work with the Linux shell will be a fundamental skill required in this class.
   
   1. Homework 1-1: Linux Shell
@@ -51,5 +51,15 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
         6. Demonstrate the use of some other command on your files.
 
 
+## Networking
+[2018-09-06](#networking)
 
+### Reading
+ * ISBB Chapter 5 - Netwokring https://bus206.pressbooks.com/chapter/chapter-5-networking-and-communication/ 
+ * IPv6 Video - https://player.oreilly.com/videos/9781771375269 ("Introduction" and "IPv6 Background And Basics" sections)
+   * Please write a number of (what you think are) important questions down as you view it and bring them to class.
+   * The "IPv6 Packet and Header" is very dense and do not worry about understanding all the concepts.
+ 
+### References
+ * Networking http://intronetworks.cs.luc.edu/current/ComputerNetworks.pdf
 
