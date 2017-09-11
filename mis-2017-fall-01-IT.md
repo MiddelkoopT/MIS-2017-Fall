@@ -69,7 +69,9 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
  * Networking http://intronetworks.cs.luc.edu/current/ComputerNetworks.pdf
  * Ethernet https://en.wikipedia.org/wiki/Ethernet_frame
  * IP https://en.wikipedia.org/wiki/Internet_Protocol and https://en.wikipedia.org/wiki/IPv6
-
+ * GPN Mesh http://speedy.greatplains.net/maddash-webui/
+ * GPN Peering http://snapp.gpn.grnoc.iu.edu/gpn/portal.cgi
+ * REST https://en.wikipedia.org/wiki/Representational_state_transfer
 
 ## Community (gitlabs)
 
