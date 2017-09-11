@@ -124,12 +124,13 @@ where `git@vcs.missouri.edu:middelkoopt/welcome.git` is the pasted from the step
 ### Homework
 Using the hands-on instructions and the documentation complete the following homework:
 
- 1. Homework 1-1: gitlabs
+ 1. Homework 1-2: Gitlabs
     1. Create a repository on https://vcs.missouri.edu called mis-pawprint-first-last as described in the Hands-On section.
     2. Assign "Guest" permissions to `@middelkoopt` and `@mjxqb` to the project
     3. Create a `ReadMe.txt` file and commit it to the repository (note the upper/lower case and spelling).
     4. Clone the repository on `tc.rnet.missouri.edu`
     5. Bonus: Modify the ReadMe.txt on `tc.rnet.missouri.edu` and push it back to `vcs.missouri.edu`.
+	6. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the assignment to receive a grade.
 
 ### References
  * Pro Git book https://git-scm.com/book/en/v2
