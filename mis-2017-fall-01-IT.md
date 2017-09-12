@@ -225,7 +225,7 @@ Using the hands-on instructions and the documentation complete the following hom
 	3. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the assignment along with your repository URL to receive a grade for example:
 	```
 	1a9c8bc7e3011f563d2370c35f592fc6c987bab4
-	git@github.com:MiddelkoopT/MIS-2017-Fall.git
+	git@vcs.missouri.edu:middelkoopt/welcome.git
 	```
 
 
