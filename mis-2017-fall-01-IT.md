@@ -132,6 +132,93 @@ Using the hands-on instructions and the documentation complete the following hom
     5. Bonus: Modify the ReadMe.txt on `tc.rnet.missouri.edu` and push it back to `vcs.missouri.edu`.
 	6. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the assignment to receive a grade.
 
+### Git Workflow
+[2018-09-11](#git-workflow)
+
+A git workflow takes changes in an editor and provides a mechanism to create publishable "work" in the form of "Work Package" in project management speak.  We can see this as a "stack" as follows.
+
+1. Community Repository (Gitlabs/vcs.missouri.edu)
+2. Machine/Local repository
+3. project index or staging area
+4. project local filesystem
+5. editor (unsaved changes)
+
+Moving up and down this stack is accomplished by a series of git commands (presented in class and below).
+
+### Git Workflow Hands-On
+
+Below is the workflow to edit and commit a file.  This is just an example please be sure to replace many of the example values with actual values the pertain to your environment.
+
+For a new system or repository (if you only configure locally) update your name and email to ensure the commit information is correct.
+```
+git config --global user.name "First Last"
+git config --global user.email pawprint@missouri.edu
+```
+
+Clone your project into a folder
+```
+git clone git@vcs.missouri.edu:middelkoopt/welcome.git
+cd welcome
+```
+
+At many of the steps throughout the process run the following to see what is going on and your changes.
+```
+git status
+git diff
+git diff -r HEAD
+```
+
+Edit the ReadMe.md file.
+```
+nano ReadMe.md
+```
+
+Save and exit.  Now view the changes and add the changes to the index.
+```
+git diff
+git add ReadMe.md
+```
+
+This is where you would change other files.  When done commit.  First view what is "staged" in the index with
+
+```
+git status
+```
+
+Then see what your "change" will be 
+
+```
+git diff -r HEAD
+```
+
+From this determine a good description (not "changes and updates") and commit the changes.
+
+```
+git commit -m "Fix spelling"
+```
+
+Now the changes are in the local repository and ready to be "published" to gitlabs (vcs.rnet.missouri.edu).  
+
+```
+git push origin master
+```
+
+Also verify that the changes have been pushed and there are no more changes.  The last commit is also printed.  This is what is "proof" of your work, and should be submitted to the Homework assignment along with your repository URL.
+
+```
+git status
+git rev-parse HEAD
+```
+
+### Homework
+Using the hands-on instructions and the documentation complete the following homework:
+
+ 1. Homework 1-3: Git
+    1. Edit the file "ReadMe.md" or other file in your class repository (`git@vcs.missouri.edu:$PAWPRINT/mis-$PAWPRINT-$FIRST-$LAST.git`).
+	2. Commit those changes and push them to `vcs.missouri.edu`
+	3. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the assignment along with your repository URL to receive a grade.
+
+
 ### References
  * Pro Git book https://git-scm.com/book/en/v2
  * Software Carpentry - Git  http://swcarpentry.github.io/git-novice/
