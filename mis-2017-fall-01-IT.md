@@ -33,7 +33,7 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
 ### Hands On
  * We will be exploring the Linux operating system using the Software Carpentry lesson on the Unix Shell (Linux)
 
-### Homework 1
+### Homework
   This homework will help you prepare for future homework.  A basic ability to work with the Linux shell will be a fundamental skill required in this class.
   
   1. Homework 1-1: Linux Shell
@@ -59,7 +59,176 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
  * IPv6 Video - https://player.oreilly.com/videos/9781771375269 ("Introduction" and "IPv6 Background And Basics" sections)
    * Please write a number of (what you think are) important questions down as you view it and bring them to class.
    * The "IPv6 Packet and Header" is very dense and do not worry about understanding all the concepts.
- 
+
+### Questions
+ * What is an IP address?
+ * What is DNS?
+ * How does a packet get from the local network to a website.
+
 ### References
  * Networking http://intronetworks.cs.luc.edu/current/ComputerNetworks.pdf
+ * Ethernet https://en.wikipedia.org/wiki/Ethernet_frame
+ * IP https://en.wikipedia.org/wiki/Internet_Protocol and https://en.wikipedia.org/wiki/IPv6
+ * GPN Mesh http://speedy.greatplains.net/maddash-webui/
+ * GPN Peering http://snapp.gpn.grnoc.iu.edu/gpn/portal.cgi
+ * REST https://en.wikipedia.org/wiki/Representational_state_transfer
 
+## Community (gitlabs)
+
+### Reading
+Read the introduction material and as much as you wish, we will be covering this in depth later but skim through it for interesting and basic material.
+ * Software Carpentry Git Lesson http://swcarpentry.github.io/git-novice/ 
+ * Pro Git book https://git-scm.com/book/en/v2
+
+### Hands-On 
+
+Go to Mizzou's Gitlabs server at https://vcs.missouri.edu and login using your Pawprint (SSO) and password (use the default LDAP method).
+
+Create a new project called `mis-login-First-Last` where login is your pawprint, for example I would be `mis-middelkoopt-Timothy-Middelkoop`.
+
+Share this project with myself `@middelkoopt` and the TA `@mjxqb`
+
+Create a ssh key by logging into `tc.rnet.missouri.edu` and running the following (make sure to create a strong passphrase):
+
+```
+$ cd ~
+$ ssh-keygen
+$ cat .ssh/id_rsa.pub
+```
+
+Copy the public key shown by the `cat .ssh/id_rsa.pub` command, it should look similar to this:
+
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDuSqEsyPw9gULRil72VHCrpw/+dmKpcPp50rr7YypK95T4US7eiwOqX0VJANKde77MjAy7+rgbjNJDbO6V3VLSJxOlUWS4Vj7wBF1j/u7EUnjdp2mMMHA2zu7sIwbjp+tjt44MYxK1P/RbB1sXwwIOUvxOZjG1uKsO/Xze6GX3l2pxkb+aDiZ+i8JZdnwC9+0ZFwUVBhcXO90IHapz1rppTFO9K1LRJtj/aiSOcD2E0mphLLDD7Z5l9EDK0tijYz/fB2F0lUFlF1isjKAGkW+Uq5CzsMDtfXWG5skaEKMf2ujMDGEenHZ3662tN2XfVc/I6NOGFGZ9QH+jLmV7JhCl middelkoopt@tc-m610-login-node623
+```
+
+Go back to gitlabs and add your public ssh-key to your account as follows (the Avatar/Account button is on the top right of the page):
+
+```
+"Avatar" -> Settings -> ssh-keys -> Key: paste public key
+```
+
+Now go to "Project" website and copy the git URL by doing the following (the "Hamburger" is the icon with three lines on the top left of the page).
+
+"Hamburger" -> Projects -> Your Projects -> select the project to
+clone (in this case mis-$USER-$NAME) -> home -> click the clipboard
+icon next to the URL, make sure SSH is selected not HTTP.
+
+Now go to your class folder on `tc.rnet.missouri.edu` and clone the repository
+```
+git clone git@vcs.missouri.edu:middelkoopt/welcome.git
+```
+where `git@vcs.missouri.edu:middelkoopt/welcome.git` is the pasted from the step before.
+
+
+### Homework
+Using the hands-on instructions and the documentation complete the following homework:
+
+ 1. Homework 1-2: Gitlabs
+    1. Create a repository on https://vcs.missouri.edu called mis-pawprint-first-last as described in the Hands-On section.
+    2. Assign "Guest" permissions to `@middelkoopt` and `@mjxqb` to the project
+    3. Create a `ReadMe.txt` file and commit it to the repository (note the upper/lower case and spelling).
+    4. Clone the repository on `tc.rnet.missouri.edu`
+    5. Bonus: Modify the ReadMe.txt on `tc.rnet.missouri.edu` and push it back to `vcs.missouri.edu`.
+	6. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the assignment to receive a grade.
+
+### Git Workflow
+[2018-09-11](#git-workflow)
+
+A git workflow takes changes in an editor and provides a mechanism to create publishable "work" in the form of a "Work Package" in project management speak.  We can see this as a "stack" as follows.
+
+1. Community Repository (Gitlabs/vcs.missouri.edu)
+2. Machine/Local repository
+3. project index or staging area
+4. project local filesystem
+5. editor (unsaved changes)
+
+Moving up and down this stack is accomplished by a series of git commands (presented in class and below).
+
+### Git Workflow Hands-On
+
+Below is the workflow to edit and commit a file.  This is just an example, please be sure to replace many of the example values with actual values that pertain to your environment.
+
+For a new system or repository (if you only configure locally) update your name and email to ensure the commit information is correct.
+```
+git config --global user.name "First Last"
+git config --global user.email pawprint@missouri.edu
+```
+
+Clone your project into a folder
+```
+git clone git@vcs.missouri.edu:middelkoopt/welcome.git
+cd welcome
+```
+
+At many of the steps throughout the process run the following to see what is going on and your changes.
+```
+git status
+git diff
+git diff -r HEAD
+```
+
+Edit the ReadMe.md file.
+```
+nano ReadMe.md
+```
+
+Save and exit.  Now view the changes and add the changes to the index.
+```
+git diff
+git add ReadMe.md
+```
+
+This is where you would change other files.  When done commit.  First view what is "staged" in the index with
+
+```
+git status
+```
+
+Then see what your "commit" will be 
+
+```
+git diff -r HEAD
+```
+
+From this determine a good description (not "changes and updates") and commit the changes.
+
+```
+git commit -m "Fix spelling"
+```
+
+Now the changes are in the local repository and ready to be "published" to gitlabs (vcs.rnet.missouri.edu).  View the commit in the logs (press 'q' to exit)
+
+```
+git log
+```
+
+And push to the remote with the following:
+
+```
+git push origin master
+```
+
+Also verify that the changes have been pushed and there are no more changes.  The last commit is also printed.  This is what is "proof" of your work, and should be submitted to the Homework assignment along with your repository URL.
+
+```
+git status
+git rev-parse HEAD
+```
+
+### Homework
+Using the hands-on instructions and the documentation complete the following homework:
+
+ 1. Homework 1-3: Git
+    1. Edit the file "ReadMe.md" or other file in your class repository (`git@vcs.missouri.edu:$PAWPRINT/mis-$PAWPRINT-$FIRST-$LAST.git`) cloned on `tc.rnet.missouri.edu`.
+	2. Commit those changes and push them to `vcs.missouri.edu`
+	3. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the assignment along with your repository URL to receive a grade for example:
+	```
+	1a9c8bc7e3011f563d2370c35f592fc6c987bab4
+	git@vcs.missouri.edu:middelkoopt/welcome.git
+	```
+
+
+### References
+ * Pro Git book https://git-scm.com/book/en/v2
+ * Software Carpentry - Git  http://swcarpentry.github.io/git-novice/
