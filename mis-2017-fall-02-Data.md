@@ -53,14 +53,14 @@ example in it.  Run the following test to ensure the data is formatted
 correctly.
 
 ```bash
-jq . data.json                                                                                                                
+jq . data.json
 ```
 
 Load the Julia module and launch Julia on a compute node (if the
 `srun` command fails just run `julia`).
 
 ```bash
-module load module load julia/julia-0.5.0 
+module load module load julia/julia-0.5.0
 srun --pty julia
 ```
 
