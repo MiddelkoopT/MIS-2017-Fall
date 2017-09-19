@@ -149,10 +149,11 @@ Moving up and down this stack is accomplished by a series of git commands (prese
 
 Below is the workflow to edit and commit a file.  This is just an example, please be sure to replace many of the example values with actual values that pertain to your environment.
 
-For a new system or repository (if you only configure locally) update your name and email to ensure the commit information is correct.
+For a new system or repository (if you only configure locally) update your name and email to ensure the commit information is correct.  Optionally set your preferred editor (nano in this case).
 ```
 git config --global user.name "First Last"
 git config --global user.email pawprint@missouri.edu
+git config --global core.editor nano
 ```
 
 Clone your project into a folder
