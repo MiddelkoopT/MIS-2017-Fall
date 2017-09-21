@@ -229,7 +229,40 @@ Using the hands-on instructions and the documentation complete the following hom
 	git@vcs.missouri.edu:middelkoopt/welcome.git
 	```
 
-
 ### References
  * Pro Git book https://git-scm.com/book/en/v2
  * Software Carpentry - Git  http://swcarpentry.github.io/git-novice/
+
+## Assessment
+
+The Module 1 assessment will assess your ability to work with compute,
+storage, software, and community and will be an extension of the
+in-class and homework assignments.  The assessment is worth 20
+assessment points.
+
+This is an assessment as such should be done entirely on your own and
+you should treat it as if it where a take home exam.  You may consult
+the internet for information but you must not directly or indirectly
+solicit third party assistance (classmates or external forums for
+example).  Please see the assessment section in the syllabus for
+additional requirements.
+
+You will submit your assessment as a push to the course remote git
+repository (`vcs.missouri.edu`) and submit both the repository URL and
+the commit-id in the Assessment Assignment on the course management
+website.
+
+Complete the following tasks:
+  1. If you have not already done so create a git repository on
+     `vcs.missouri.edu` and share it with the instructor and TA as per
+     Homework-1-2.
+  2. Clean up your repository (removing any extra test files etc.)
+  3. Rename the "ReadMe.txt" file to "ReadMe.md" and use GitLab
+     Flavored Markdown (https://docs.gitlab.com/ee/user/markdown.html)
+     to format the text and do the following:
+	 1. Include a title with your name (Headline 1)
+	 2. Follow this by a paragraph describing the repository.  
+	 3. Optionally include a short Biography as well.
+	 4. Commit the changes.
+	 5. Ensure that in the commit log the "Author:" line contains the
+     correct name and email address.
