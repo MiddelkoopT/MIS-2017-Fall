@@ -37,7 +37,7 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
   This homework will help you prepare for future homework.  A basic ability to work with the Linux shell will be a fundamental skill required in this class.
   
   1. Homework 1-1: Linux Shell
-     1. Connect to the teaching cluster `tc.rnet.missour.edu`
+     1. Connect to the teaching cluster `tc.rnet.missouri.edu`
      2. Create a series of folders to store and organize your class work, one of which will be for this class.
      3. In the class folder create a folder called 'module-1' and a sub-folder called 'linux-shell'
      4. In the class folder create a file called 'ReadMe.txt' and in and edit some text about this class.
