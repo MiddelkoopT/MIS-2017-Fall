@@ -250,19 +250,41 @@ additional requirements.
 You will submit your assessment as a push to the course remote git
 repository (`vcs.missouri.edu`) and submit both the repository URL and
 the commit-id in the Assessment Assignment on the course management
-website.
+website.  All commits done as a part of this assessment should have
+proper commit messages and 'author' information in the `git log`.
 
 Complete the following tasks:
   1. If you have not already done so create a git repository on
      `vcs.missouri.edu` and share it with the instructor and TA as per
      Homework-1-2.
-  2. Clean up your repository (removing any extra test files etc.)
-  3. Rename the "ReadMe.txt" file to "ReadMe.md" and use GitLab
-     Flavored Markdown (https://docs.gitlab.com/ee/user/markdown.html)
-     to format the text and do the following:
+  2. Ensure that in the commit log the "Author:" line contains your
+     full name and email address and fix if need be.
+  3. Clean up your repository (removing any extra test files etc.) and commit the changes.
+  4. Rename (in git using `git mv`) the "ReadMe.txt" file to
+     "ReadMe.md" and use GitLab Flavored Markdown
+     (https://docs.gitlab.com/ee/user/markdown.html) to format the
+     text and do the following:
 	 1. Include a title with your name (Headline 1)
-	 2. Follow this by a paragraph describing the repository.  
+	 2. Follow this by a paragraph describing the repository.
 	 3. Optionally include a short Biography as well.
 	 4. Commit the changes.
-	 5. Ensure that in the commit log the "Author:" line contains the
-     correct name and email address.
+  5. Create a folder called `assessment-1` in the project and create a
+     file called `assessment-1-shell.txt` that contains the *text* of
+     the commands and results (including the prompt) of the following:
+	 1. Create a file called `fruit.txt` in the `assessment-1` folder
+        with a number of fruit names, one on each line.
+	 2. Display this file to the console/screen (hint `cat`).
+	 3. Count the number of fruit in this file using a pipe (`|`).
+	 4. Sort the fruit into a second file named `fruit-sorted.txt`
+        (hint: redirection).
+	 5. Show the changes to `fruit.txt` and `fruit-sorted.txt` that
+        you are about to commit and then commit these files to the
+        repository.
+	 6. What is the **commit** id of the previous step.
+	 7. Commit the *text* of the commands and results (including the
+        prompt) of the previous steps stored in the
+        `assessment-1-shell.txt` file.
+  6. Push all the commits to the `vcs` repository and submit the most
+     recent (HEAD) commit-id and the `vcs` repository URL to the course
+     assignment 'Assessment 1'.
+	 
