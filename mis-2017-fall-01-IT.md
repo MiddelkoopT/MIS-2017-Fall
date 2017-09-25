@@ -229,7 +229,62 @@ Using the hands-on instructions and the documentation complete the following hom
 	git@vcs.missouri.edu:middelkoopt/welcome.git
 	```
 
-
 ### References
  * Pro Git book https://git-scm.com/book/en/v2
  * Software Carpentry - Git  http://swcarpentry.github.io/git-novice/
+
+## Assessment
+
+The Module 1 assessment will assess your ability to work with compute,
+storage, software, and community and will be an extension of the
+in-class and homework assignments.  The assessment is worth 20
+assessment points.
+
+This is an assessment as such should be done entirely on your own and
+you should treat it as if it where a take home exam.  You may consult
+the internet for information but you must not directly or indirectly
+solicit third party assistance (classmates or external forums for
+example).  Please see the assessment section in the syllabus for
+additional requirements.
+
+You will submit your assessment as a push to the course remote git
+repository (`vcs.missouri.edu`) and submit both the repository URL and
+the commit-id in the Assessment Assignment on the course management
+website.  All commits done as a part of this assessment should have
+proper commit messages and 'author' information in the `git log`.
+
+Complete the following tasks:
+  1. If you have not already done so create a git repository on
+     `vcs.missouri.edu` and share it with the instructor and TA as per
+     Homework-1-2.
+  2. Ensure that in the commit log the "Author:" line contains your
+     full name and email address and fix if need be.
+  3. Clean up your repository (removing any extra test files etc.) and commit the changes.
+  4. Rename (in git using `git mv`) the "ReadMe.txt" file to
+     "ReadMe.md" and use GitLab Flavored Markdown
+     (https://docs.gitlab.com/ee/user/markdown.html) to format the
+     text and do the following:
+	 1. Include a title with your name (Headline 1)
+	 2. Follow this by a paragraph describing the repository.
+	 3. Optionally include a short Biography as well.
+	 4. Commit the changes.
+  5. Create a folder called `assessment-1` in the project and create a
+     file called `assessment-1-shell.txt` that contains the *text* of
+     the commands and results (including the prompt) of the following:
+	 1. Create a file called `fruit.txt` in the `assessment-1` folder
+        with a number of fruit names, one on each line.
+	 2. Display this file to the console/screen (hint `cat`).
+	 3. Count the number of fruit in this file using a pipe (`|`).
+	 4. Sort the fruit into a second file named `fruit-sorted.txt`
+        (hint: redirection).
+	 5. Show the changes to `fruit.txt` and `fruit-sorted.txt` that
+        you are about to commit and then commit these files to the
+        repository.
+	 6. What is the **commit** id of the previous step.
+	 7. Commit the *text* of the commands and results (including the
+        prompt) of the previous steps stored in the
+        `assessment-1-shell.txt` file.
+  6. Push all the commits to the `vcs` repository and submit the most
+     recent (HEAD) commit-id and the `vcs` repository URL to the course
+     assignment 'Assessment 1'.
+	 
