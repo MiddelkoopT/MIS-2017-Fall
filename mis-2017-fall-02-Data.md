@@ -98,6 +98,40 @@ exit()
    5. Copy the calculations and the results into the Canvas assignment for this homework (text, not screen-shots).
    6. Copy the `commit-id` and the repository URL into the Canvas assignment.
 
+## SQL
+[2018-09-25](#sql)
+
+### Reading
+* ISBB Chapter 4 - data https://bus206.pressbooks.com/chapter/chapter-4-data-and-databases/
+* Database design with UML and SQL, 3rd edition: http://www.tomjewett.com/dbdesign
+  * Models and languages http://www.tomjewett.com/dbdesign/dbdesign.php?page=models.html
+  * Basic structures: classes and schemes http://www.tomjewett.com/dbdesign/dbdesign.php?page=class.php
+  * Basic structures: rows and tables http://www.tomjewett.com/dbdesign/dbdesign.php?page=tables.php
+  * Basic structure: associations http://www.tomjewett.com/dbdesign/dbdesign.php?page=association.php
+  * Discussion: more about keys http://www.tomjewett.com/dbdesign/dbdesign.php?page=keys.php
+* Software Carpentry - Databases and SQL http://swcarpentry.github.io/sql-novice-survey/
+  * Section 1-6 (Selecting Data, Sorting and Removing Duplicates,
+    Filtering, Calculating New Values, Missing Data, and Aggregation).
+
+### Hands-on
+You may find the SQLite SQL Reference (http://www.sqlite.org/lang.html) useful in understanding commands.
+
+All the following examples are using the teaching cluster.  Please
+change your current directory to a folder to contain these examples
+(do not use your home folder).
+
+Get the data from the example
+```bash
+wget -c https://github.com/swcarpentry/sql-novice-survey/raw/gh-pages/files/survey.db
+```
+
+Start SQLite3 with the sample data
+```bash
+sqlite3 survey.db
+```
+
+Use the `.help`, `.exit`, `.tables`, `.schema`, and `.dump` commands.
+
 
 ### References
  * ISBB Chapter 4 - Data (https://bus206.pressbooks.com/chapter/chapter-4/)
