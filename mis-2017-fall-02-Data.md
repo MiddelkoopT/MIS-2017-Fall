@@ -142,7 +142,7 @@ Use the `.help`, `.exit`, `.tables`, `.schema`, and `.dump` commands.
 	   2. List the columns for the `Site` table.
 	   3. Who took samples from site  'DR-1' on '1927-02-10. (use a SQL comment `-- 2-2-3: Your answer` to record your answer)
 	   4. Write an SQL statement for the above question.
-	   6. Formulate another question to ask the database (use a SQL comment `-- 2-2-3: Your answer` to record your answer)
+	   6. Formulate another question to ask the database (use a SQL comment `-- 2-2-6: Your answer` to record your answer)
 	   7. Write and SQL statement for the above question.
 
 ### References
