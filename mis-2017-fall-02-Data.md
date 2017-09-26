@@ -132,6 +132,18 @@ sqlite3 survey.db
 
 Use the `.help`, `.exit`, `.tables`, `.schema`, and `.dump` commands.
 
+### Homework
+
+1. Homework 2-2: SQLite3. 
+   1. Download and start `sqlite3` as per the above hands-on
+   instructions.  Complete the following and copy/paste the session
+   into the course assignment similarly named:
+	   1. Display the database schema.
+	   2. List the columns for the `Site` table.
+	   3. Who took samples from site  'DR-1' on '1927-02-10. (run `echo "your answer"` to record your answer)
+	   4. Write an SQL statement for the above question.
+	   6. Formulate another question to ask the database (run `echo "the question"` to record your answer)
+	   7. Write and SQL statement for the above question.
 
 ### References
  * ISBB Chapter 4 - Data (https://bus206.pressbooks.com/chapter/chapter-4/)
