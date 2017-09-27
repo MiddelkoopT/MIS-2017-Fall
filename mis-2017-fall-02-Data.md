@@ -145,6 +145,43 @@ Use the `.help`, `.exit`, `.tables`, `.schema`, and `.dump` commands.
 	   6. Formulate another question to ask the database (use a SQL comment `-- 2-2-6: Your answer` to record your answer)
 	   7. Write and SQL statement for the above question.
 
+## Databases
+[2018-09-27](#databases)
+
+In this section we will explore relational databases in the context of an example database (https://chinookdatabase.codeplex.com/)
+
+### Reading
+ * Some of the examples are taken from http://www.sqlitetutorial.net/
+
+### Hands-On
+First create a simple database and use it.
+```bash
+sqlite3 simple.db
+```
+
+```sql
+.header ON
+CREATE TABLE map (key string PRIMARY KEY, value number);
+INSERT INTO map (key,value) VALUES ("One",1),("Two",2);
+SELECT * FROM map WHERE key="One";
+```
+
+Now download, unzip, and run the sample database.
+```bash
+wget -c http://www.sqlitetutorial.net/download/sqlite-sample-database/?wpdmdl=94 -O chinook.zip
+unzip chinook.zip
+sqlite3 chinook.db
+```
+
+Review the database [**schema**](http://www.sqlitetutorial.net/download/sqlite-sample-database-diagram-with-color/?wpdmdl=98).
+
+Some sample queries:
+```sql
+SELECT * FROM tracks JOIN genres ON tracks.GenreId=genres.GenreId;
+SELECT CustomerId, InvoiceDate, BillingCity FROM invoices;
+```
+
+
 ### References
  * ISBB Chapter 4 - Data (https://bus206.pressbooks.com/chapter/chapter-4/)
  * Relational Databases http://www.tomjewett.com/dbdesign/
@@ -152,4 +189,5 @@ Use the `.help`, `.exit`, `.tables`, `.schema`, and `.dump` commands.
  * JSON data format and specification: http://www.json.org/
  * Julia https://docs.julialang.org
  * SQL database SQLite: http://www.sqlite.org/ and 
+ * SQLite tutorial: http://www.sqlitetutorial.net/
  * Key-Value store Redis: https://redis.io/
