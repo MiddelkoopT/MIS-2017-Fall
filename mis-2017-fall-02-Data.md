@@ -185,9 +185,9 @@ SELECT CustomerId, InvoiceDate, BillingCity FROM invoices;
 1. Homework 2-3: Databases.
    1. Download and load the chinook datbase as described in the notes
       and answer the following questions. Copy and paste the SQL
-      session into the course homework assignment.  For
-      written questions use the "SQL Comment" syntax (`sql --
-      comment`) within SQLite.
+      session into the course homework assignment.  For written
+      questions use the "SQL Comment" syntax (`-- comment`) within
+      SQLite.
 	  1. Develop a simple question to ask the database.  The question
          must limit the data to a subset of a table or tables.
 	  2. Write and execute the SQL for the previous question.
