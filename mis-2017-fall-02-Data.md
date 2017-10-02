@@ -164,6 +164,8 @@ sqlite3 simple.db
 CREATE TABLE map (key string PRIMARY KEY, value number);
 INSERT INTO map (key,value) VALUES ("One",1),("Two",2);
 SELECT * FROM map WHERE key="One";
+UPDATE map SET value=100 WHERE key="One";
+DELETE FROM map WHERE key="One";
 ```
 
 Now download, unzip, and run the sample database.
@@ -194,6 +196,16 @@ SELECT CustomerId, InvoiceDate, BillingCity FROM invoices;
 	  3. Develop a more complex question will span at least two tables.
 	  4. Write and execute the SQL for the previous question.
 
+### Example 2 - Baseball
+The next in-class example is using a baseball statistics database.
+ * Baseball Data http://www.seanlahman.com/baseball-archive/statistics/
+ * Sqlite3 version of the data https://github.com/jknecht/baseball-archive-sqlite
+
+```bash
+wget https://github.com/jknecht/baseball-archive-sqlite/raw/master/lahman2016.sqlite
+sqlite3	lahman2016.sqlite
+```
+
 
 ### References
  * ISBB Chapter 4 - Data (https://bus206.pressbooks.com/chapter/chapter-4/)
@@ -203,4 +215,5 @@ SELECT CustomerId, InvoiceDate, BillingCity FROM invoices;
  * Julia https://docs.julialang.org
  * SQL database SQLite: http://www.sqlite.org/ and 
  * SQLite tutorial: http://www.sqlitetutorial.net/
+ * Baseball statistics http://www.seanlahman.com/baseball-archive/statistics/, Sqlite3: https://github.com/jknecht/baseball-archive-sqlite
  * Key-Value store Redis: https://redis.io/
