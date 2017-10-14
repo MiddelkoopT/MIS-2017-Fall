@@ -239,6 +239,24 @@ access the file is to commit it to git and download it from VCS.
 There are other tools to access files via either "sftp" or "rsync" but
 those methods are left as an exercise for the reader.
 
+## Assessment
+
+Complete the following assessment and push your work to the *mis
+assignment repository* on VCS and submit both the last *commit-id* and
+the *repository URL* to the class website.
+
+The Module 2 assessment will assess your understanding of data,
+databases, and the SQL language and will be an extension of the
+in-class and homework assignments.  The assessment is worth 20
+assessment points.
+
+This is an assessment as such should be done entirely on your own and
+you should treat it as if it where a take home exam.  You may consult
+the internet for information but you must not directly or indirectly
+solicit third party assistance (classmates or external forums for
+example).  Please see the assessment section in the syllabus for
+additional requirements.
+
 
 ### References
  * ISBB Chapter 4 - Data (https://bus206.pressbooks.com/chapter/chapter-4/)
