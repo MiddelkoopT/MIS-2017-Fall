@@ -206,6 +206,39 @@ wget https://github.com/jknecht/baseball-archive-sqlite/raw/master/lahman2016.sq
 sqlite3	lahman2016.sqlite
 ```
 
+Many time you will want to save the query, not just run it in the shell.  To do this save the query in a file and *redirect* the output into the `sqlite3` command and optionally redirect the output to a file.  For the following example:
+
+What did the top 10 season hitters of all time make during that year?
+```sql
+SELECT 
+  Master.playerID, 
+  Master.NameLast,
+  Master.debut,
+  Salaries.YearID,
+  Batting.YearID,
+  Batting.H
+FROM
+  Master
+JOIN Salaries ON Master.playerID=Salaries.playerID
+JOIN Batting ON Master.playerID=Batting.playerID
+WHERE
+  Salaries.yearID=Batting.yearID
+ORDER BY Batting.H DESC, Master.playerID
+LIMIT 10;
+```
+
+Save the text to a file called `baseball.sql` and run the following command (it takes about 50 seconds to run):
+```bash
+srun sqlite3 lahman2016.sqlite -header -csv < baseball.sql > baseball.csv
+```
+
+Please note the `srun` command runs the `sqlite3` command on a node in
+the cluster.  The `-header` and `-csv` make it so the output can be
+used by programs such as Excel, R, Julia, Python, etc.  One way to
+access the file is to commit it to git and download it from VCS.
+There are other tools to access files via either "sftp" or "rsync" but
+those methods are left as an exercise for the reader.
+
 
 ### References
  * ISBB Chapter 4 - Data (https://bus206.pressbooks.com/chapter/chapter-4/)
