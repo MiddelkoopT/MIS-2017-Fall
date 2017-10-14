@@ -258,7 +258,7 @@ example).  Please see the assessment section in the syllabus for
 additional requirements.
 
 
-### References
+## References
  * ISBB Chapter 4 - Data (https://bus206.pressbooks.com/chapter/chapter-4/)
  * Relational Databases http://www.tomjewett.com/dbdesign/
  * Software Carpentry - Databases and SQL: http://swcarpentry.github.io/sql-novice-survey/
