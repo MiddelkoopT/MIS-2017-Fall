@@ -258,10 +258,11 @@ example).  Please see the assessment section in the syllabus for
 additional requirements.
 
 Assessment 2:
- 1. Answer the following questions saved in the file
-    `assessment-2/baseball.sql` in your class git repository and use
-    the SQL comments `-- ` to restate the question and give the
-    business interpretation of the result.
+ 1. Using the Baseball database described in this module answer the
+    following questions saved in the file `assessment-2/baseball.sql`
+    in your class git repository and use the SQL comments (`-- `) to
+    restate the question and give the business interpretation of the
+    result.
 	1. How many National League (NL) teams played in the year 2000?
 	   1. Show all the teams and their names and home stadium for the National League.
 	   2. Show all the teams and their names and home stadium for the American League.
