@@ -243,7 +243,7 @@ those methods are left as an exercise for the reader.
 
 Complete the following assessment and push your work to the *mis
 assignment repository* on VCS and submit both the last *commit-id* and
-the *repository URL* to the class website.
+the *repository URL* to the *assessment 2* assignment on the class website.
 
 The Module 2 assessment will assess your understanding of data,
 databases, and the SQL language and will be an extension of the
@@ -257,9 +257,50 @@ solicit third party assistance (classmates or external forums for
 example).  Please see the assessment section in the syllabus for
 additional requirements.
 
+Assessment 2:
+ 1. Answer the following questions saved in the file
+    `assessment-2/baseball.sql` in your class git repository and use
+    the SQL comments `-- ` to restate the question and give the
+    business interpretation of the result.
+	1. How many National League (NL) teams played in the year 2000?
+	   1. Show all the teams and their names and home stadium for the National League.
+	   2. Show all the teams and their names and home stadium for the American League.
+    2. Show all the leagues and how many teams played in the year 2000 (with one query);
+	3. Rank the top 10 Universities by the number of hits that their
+       alumni produce.  (Hint do not use the `Master` table and this is not a "long" query)
+	4. Ask a simple question of the database that will require at
+       least two tables and show the resulting SQL, Query Output, and
+       the interpretation of the answer.  You must not use a question
+       asked in class or as a part of any assignment or a simple
+       variation thereof.
+ 2. Design a small simple database based on a real world example with
+	at least two relationships and three tables.  The database
+	creation and queries should be placed in the
+	`assessment-2/realworld.sql` file and be annotated with SQL
+	comments.  The metadata should be placed in the file realworld.md
+	and be written in gitlabs markdown in a similar format as the
+	Baseball example used in class.  You must not use an example used
+	in class, in any other assignment, or any other public or private
+	source.  You must not use proprietary or sensitive data and all
+	data must be synthetic (made up).
+	1. Describe the database structure in the `realworld.md` file.
+       Include as many sections as relevant.  Describe all relevant
+       relationships.
+    2. Using SQL create the tables.  Define the *Primary Key* but do
+       no not force referential integrity.
+    3. Populate the database with data in all tables, enough to be
+       non-trivial and be usable in the remaining questions.
+    4. Demonstrate the use of the `JOIN` statement on one or two
+       relationships.
+	5. Develop a simple question of the database and write the SQL to show
+       the answer.  This must be more than `SELECT * FROM simple`.
+    6. Develop a question that requires the use of the `GROUP BY` and
+       aggregate functions (`SUM`, `COUNT` etc.).  Write the SQL to
+       show the answer.
 
 ## References
- * ISBB Chapter 4 - Data (https://bus206.pressbooks.com/chapter/chapter-4/)
+ * ISBB Chapter 4 - Data
+   (https://bus206.pressbooks.com/chapter/chapter-4/)
  * Relational Databases http://www.tomjewett.com/dbdesign/
  * Software Carpentry - Databases and SQL: http://swcarpentry.github.io/sql-novice-survey/
  * JSON data format and specification: http://www.json.org/
