@@ -278,13 +278,13 @@ Assessment 2:
 	at least two relationships and three tables.  The database
 	creation and queries should be placed in the
 	`assessment-2/realworld.sql` file and be annotated with SQL
-	comments.  The metadata should be placed in the file realworld.md
+	comments.  The metadata should be placed in the file `assessment-2/realworld.md`
 	and be written in gitlabs markdown in a similar format as the
 	Baseball example used in class.  You must not use an example used
 	in class, in any other assignment, or any other public or private
 	source.  You must not use proprietary or sensitive data and all
 	data must be synthetic (made up).
-	1. Describe the database structure in the `realworld.md` file.
+	1. Describe the database structure in the `assessment-2/realworld.md` file.
        Include as many sections as relevant.  Describe all relevant
        relationships.
     2. Using SQL create the tables.  Define the *Primary Key* but do
