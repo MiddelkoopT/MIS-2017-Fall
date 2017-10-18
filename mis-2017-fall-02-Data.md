@@ -262,7 +262,9 @@ Assessment 2:
     following questions saved in the file `assessment-2/baseball.sql`
     in your class git repository and use the SQL comments (`-- `) to
     restate the question and give the business interpretation of the
-    result.
+    result.  The sqlite3 database should be stored in
+    `assessment-2/baseball.sqlite` similar
+    to [Example 2 - Baseball](#example-2---baseball).
 	1. How many National League (NL) teams played in the year 2000?
 	   1. Show all the teams and their names and home stadium for the National League.
 	   2. Show all the teams and their names and home stadium for the American League.
@@ -274,16 +276,18 @@ Assessment 2:
        the interpretation of the answer.  You must not use a question
        asked in class or as a part of any assignment or a simple
        variation thereof.
+    5. Commit `assessment-2/baseball.sql` to your class assignment git repository and push it to vcs.
  2. Design a small simple database based on a real world example with
-	at least two relationships and three tables.  The database
+	at least two relationships and three tables.  The database should
+	be stored in `assessment-2/realworld.sqlite` file and the SQL
 	creation and queries should be placed in the
 	`assessment-2/realworld.sql` file and be annotated with SQL
-	comments.  The metadata should be placed in the file `assessment-2/realworld.md`
-	and be written in gitlabs markdown in a similar format as the
-	Baseball example used in class.  You must not use an example used
-	in class, in any other assignment, or any other public or private
-	source.  You must not use proprietary or sensitive data and all
-	data must be synthetic (made up).
+	comments.  The metadata should be placed in the file
+	`assessment-2/realworld.md` and be written in gitlabs markdown in
+	a similar format as the Baseball example used in class.  You must
+	not use an example used in class, in any other assignment, or any
+	other public or private source.  You must not use proprietary or
+	sensitive data and all data must be synthetic (made up).
 	1. Describe the database structure in the `assessment-2/realworld.md` file.
        Include as many sections as relevant.  Describe all relevant
        relationships.
@@ -298,6 +302,9 @@ Assessment 2:
     6. Develop a question that requires the use of the `GROUP BY` and
        aggregate functions (`SUM`, `COUNT` etc.).  Write the SQL to
        show the answer.
+    7. Commit `assessment-2/realworld.sql` and
+       `assessment-2/realworld.md` to your git class assignment repository and push it to vcs.
+3. Verify your work is stored on vcs and verify that the *commit-id* matches with tc.
 
 ## References
  * ISBB Chapter 4 - Data
