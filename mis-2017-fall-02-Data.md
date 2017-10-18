@@ -262,8 +262,7 @@ Assessment 2:
     following questions saved in the file `assessment-2/baseball.sql`
     in your class git repository and use the SQL comments (`-- `) to
     restate the question and give the business interpretation of the
-    result.  The sqlite3 database should be stored in
-    `assessment-2/baseball.sqlite` similar
+    result.  The sqlite3 database should be used similar to
     to [Example 2 - Baseball](#example-2---baseball).
 	1. How many National League (NL) teams played in the year 2000?
 	   1. Show all the teams and their names and home stadium for the National League.
