@@ -72,9 +72,6 @@ simple PHP dynamic web page.
          by input` section of the W3C validation services at
          https://validator.w3.org/#validate_by_input .
 
-
-
-
 ## Python
 
 In this section we cover basic Python (version 3) and iteration,
@@ -86,6 +83,22 @@ expressions.
  * Python Tutorial https://docs.python.org/3/tutorial/
  * Software Carpentry - Python http://swcarpentry.github.io/python-novice-inflammation/
  * Python Regular Expressions https://docs.python.org/3/library/re.html
+
+### Homework
+This homework will introduce you to basic Python 3 programming and classes.
+
+1. Homework 3-2: Python Classes
+   1. Create a basic Python 3 `Calculator` class as demonstrated in
+      class in a file in your class `mis-` repository in the folder
+      `homework-3-2` called `caluclator.py`.  Commit this file and
+      push the repository to `vcs.rnet.missouri.edu` and post the
+      `commit-id` and repository URL in the assignment associated with
+      this homework.  The calculator should do the following:
+	  1. Add, subtract, multiply, and divide.
+	  2. Keep track of the last answer just as most calculators do ("ANS" key).
+	  3. Implement a "Memory" and "Memory+" like most calculators.
+	  4. Create a calculator instance and demonstrate all the functions of the calculator.
+	  5. Create a second calculator instance and display the current memory.
 
 ## Security
 
