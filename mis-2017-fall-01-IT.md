@@ -73,6 +73,11 @@ In Module 1 we cover basic Information Technology (IT) Architecture and IT parad
  * GPN Peering http://snapp.gpn.grnoc.iu.edu/gpn/portal.cgi
  * REST https://en.wikipedia.org/wiki/Representational_state_transfer
 
+## People
+
+### Reading
+ * ISBB Chapter 9 - People https://bus206.pressbooks.com/chapter/chapter-people/
+
 ## Community (gitlabs)
 
 ### Reading
