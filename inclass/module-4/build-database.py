@@ -4,6 +4,7 @@ import sqlite3
 import json
 import os
 import re
+import csv
 
 ## Load config
 f=open("config.json")
@@ -14,10 +15,10 @@ data=config["data"]
 
 ## Functions
 def loadTable(db,tablename):
-    f=open("%s/%s.csv" % (data,tablename))
+    f=open("%s/%s.csv" % (data,tablename),newline='')
+    reader = csv.reader(f)
 
-    header=f.readline().rstrip()
-    columns=header.split(",")
+    columns=reader.__next__()
 
     ## We need to create the table insecurely with direct generation.
     ## TODO: Encode metadata types in JSON schema file
@@ -29,8 +30,7 @@ def loadTable(db,tablename):
     db.execute(sql)
 
     ## Load data
-    for l in f.readlines():
-        row=l.rstrip().split(',')
+    for row in reader:
         
         #print(row)
         sql="INSERT INTO %s (%s) VALUES (%s)" % (tablename, ','.join(map(lambda s:"'%s'" % s,columns)), ','.join(['?']*len(columns)))
