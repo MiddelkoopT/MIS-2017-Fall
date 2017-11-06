@@ -6,6 +6,10 @@ import os
 import re
 import csv
 
+## Convert Baseball CSV into Sqlite3.
+## * Assume columns are unique to the database
+## use config.numeric map numeric columns
+
 ## Load config
 f=open("config.json")
 config=json.load(f)
@@ -25,7 +29,10 @@ def loadTable(db,tablename):
     db.execute("DROP TABLE IF EXISTS %s" % tablename)
     columndefinition=[]
     for c in columns:
-        columndefinition.append("""'%s' TEXT""" % c)
+        if c in config["integer"]:
+            columndefinition.append("""'%s' INTEGER""" % c)
+        else:
+            columndefinition.append("""'%s' TEXT""" % c)
     sql="CREATE TABLE %s (%s)" % (tablename,','.join(columndefinition))
     db.execute(sql)
 
@@ -33,7 +40,10 @@ def loadTable(db,tablename):
     for row in reader:
         
         #print(row)
-        sql="INSERT INTO %s (%s) VALUES (%s)" % (tablename, ','.join(map(lambda s:"'%s'" % s,columns)), ','.join(['?']*len(columns)))
+        sql="INSERT INTO %s (%s) VALUES (%s)" % (
+            tablename, 
+            ','.join(map(lambda s:"'%s'" % s,columns)),
+            ','.join(['?']*len(columns)))
         try:
             db.execute(sql,row)
         except Exception as e:
