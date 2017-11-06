@@ -1,0 +1,7 @@
+#!/bin/bash
+
+install -dv data
+(cd data 
+  wget -c http://seanlahman.com/files/database/baseballdatabank-2017.1.zip
+  unzip -o baseballdatabank-2017.1.zip
+)
