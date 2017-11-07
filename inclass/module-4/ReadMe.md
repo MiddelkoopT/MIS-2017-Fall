@@ -9,8 +9,3 @@ Documentation licensed under CC by SA 3.0.
 The data used in this example is from the Lahman’s Baseball Database
 (http://www.seanlahman.com/baseball-archive/statistics/)
 
-Download and extract data from website
-
-```bash
-srun bash download-data.sh
-```

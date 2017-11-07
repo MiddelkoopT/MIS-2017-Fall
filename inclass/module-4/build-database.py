@@ -10,12 +10,13 @@ import csv
 ## * Assume columns are unique to the database
 ## use config.numeric map numeric columns
 
+print("===","build-database.py")
+
 ## Load config
 f=open("config.json")
 config=json.load(f)
 f.close()
 data=config["data"]
-
 
 ## Functions
 def loadTable(db,tablename):
