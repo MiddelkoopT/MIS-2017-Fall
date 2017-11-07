@@ -1,0 +1,21 @@
+[
+    {
+	"name": "concatenate test",
+	"operator": "c",
+	"s1": "AAA",
+	"s2": "BBB",
+	"expected": "AAABBB"
+    },
+    {
+	"name": "last",
+	"operator": "l",
+	"s1": "ABC",
+	"expected": "C"
+    },
+    {
+	"name": "first",
+	"operator": "f",
+	"s1": "DEF",
+	"expected": "D"
+    }
+]
