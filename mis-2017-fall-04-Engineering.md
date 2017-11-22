@@ -170,6 +170,64 @@ An example calculation can be found in the in class Module
 See the Julia examples in Module 2 and the Julia docs
 (https://docs.julialang.org) for basic and advanced use.
 
+## Application Programmer Interface (API)
+
+API's are the backbone of connected applications and Internet Scale
+applications.  One of the most simplest API protocols is HTTP REST
+utilizing JSON.  This protocol uses the same protocol as a web server
+and encodes the API as set of URL endpoints surrounded by
+documentation. We will be using the GitLabs API
+(https://docs.gitlab.com/ee/api/) in this example.
+
+
+The Linux command `curl` is similar to `wget` but is used to collect
+data from web servers and pass it to a pipe. The following example
+demonstrates how the this process works.
+
+First, a simple example to demonstrate the REST process.  First we get
+a JSON file from a URL.
+
+```
+curl -k -s https://vcs.missouri.edu/middelkoopt/mis-api/raw/master/simple.json
+```
+
+Note the `-s` switch is the "silence" option to remove extra message.
+The `-k` switch is a workaround due to some issues with certificates.
+
+Use the `jq` program to get the `name` attribute.
+```
+curl -k -s https://vcs.missouri.edu/middelkoopt/mis-api/raw/master/simple.json |jq .name
+```
+
+Lets get the project information for the https://vcs.missouri.edu/middelkoopt/mis-api project.
+
+Now for a longer example.  Note the use of the API variable to easily
+change endpoint.  Also note that it is typical to include a version number.
+
+This lists the public projects on the server (API at https://docs.gitlab.com/ee/api/projects.html)
+
+```
+API="https://vcs.missouri.edu/api/v4"
+curl -sk $API/projects |jq .
+```
+
+Information is included in the URL as well as in how the data is
+presented to the server.  This next example will get the project
+information for project 926.
+
+```
+curl -sk $API/projects/926 |jq .
+```
+
+And we can also just get a portion of the data.
+```
+curl -sk $API/projects/926 |jq .description
+```
+
+For a more in depth see
+the [gitlabs-api.sh](incluass/module-4/gitlabs-api.sh) example for
+module 4
+
 
 ## References
  * ISBB Chapter 8 - Business Processes (https://bus206.pressbooks.com/chapter/chapter-9)
