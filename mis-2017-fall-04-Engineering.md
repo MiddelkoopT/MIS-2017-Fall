@@ -160,7 +160,7 @@ srun --pty julia
 
 To run 4 cores and 10GB or RAM use
 ```
-module load julia/julia-0.5.0                                                                                                                                               
+module load julia/julia-0.5.0
 srun --pty --mem=10G -c 4 julia -p 4
 ```
 
