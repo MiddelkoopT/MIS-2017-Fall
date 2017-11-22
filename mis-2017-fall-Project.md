@@ -123,3 +123,7 @@ The project will be graded on the following areas:
 Submit the commit-id and URL to your "mis-*" git repository to the
 assignment posted on the course website.
 
+## References
+* Engineering Workflow [Example](inclass/module-4)
+* SLURM on the cluste http://docs.rnet.missouri.edu/SLURM/slurm
+
