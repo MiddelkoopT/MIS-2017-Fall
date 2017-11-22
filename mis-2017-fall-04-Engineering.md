@@ -29,6 +29,7 @@ today utilize "cloud native" development and the practice of DevOps.
    3. Briefly discuss what DevOps means to you.
 
 ### Reading
+ * ISBB Chapter 8 - Business Processes (https://bus206.pressbooks.com/chapter/chapter-9)
  * Cloud Native: 
    * https://www.oreilly.com/learning/the-cloud-native-application
    * https://www.oreilly.com/ideas/the-evolution-of-devops
@@ -97,12 +98,15 @@ entire workflow including smaller data and known good solutions.
 ### Reading
  * Scientific Workflows: http://www.pnl.gov/computing/technologies/sci_workflow.stm
 
-## R
+## Analysis Software
 
-The R language is used extensively in industry and academia and is an
-open source alternative to many expensive statistical software
-packages.  R utilizes a shell like the rest of the tools covered in
-this course and allows for easy automation for statistical analysis tasks.
+### R
+
+The [R language](https://www.r-project.org/) is used extensively in
+industry and academia and is an open source alternative to many
+expensive statistical software packages.  R utilizes a shell like the
+rest of the tools covered in this course and allows for easy
+automation for statistical analysis tasks.
 
 To run R you must first load the module, then run it on the cluster
 ```
@@ -136,11 +140,35 @@ WinSCP (https://winscp.net).  ChromeOS (Chomebooks) can use the SFTP
 button/client in the secure shell app used in this class that allows
 access to the files via the built-in file browser.
 
-
-## Reading
+#### Reading
  * Introduction to R and Statistics for IMSE 4410
    * https://github.com/MiddelkoopT/Stats-2016-Spring/blob/master/stats-2016-00-Introduction.Rmd (R markdown)
    * https://github.com/MiddelkoopT/Stats-2016-Spring/blob/master/stats-2016-00-Introduction.pdf (pdf)
+
+
+### Julia
+
+[Julia](https://julialang.org) is an emerging Open Source language similar to Matlab.  It has
+better performance and supports multi-core and multi-node parallelism.
+Vectorization of code to increase performance is not required.
+
+To run Julia on a single node with a single core, run the following:
+```
+module load julia/julia-0.5.0
+srun --pty julia
+```
+
+To run 4 cores and 10GB or RAM use
+```
+module load julia/julia-0.5.0                                                                                                                                               
+srun --pty --mem=10G -c 4 julia -p 4
+```
+
+An example calculation can be found in the in class Module
+4 [compute.jl](inclass/module-4/compute.jl).
+
+See the Julia examples in Module 2 and the Julia docs
+(https://docs.julialang.org) for basic and advanced use.
 
 
 ## References
@@ -151,4 +179,4 @@ access to the files via the built-in file browser.
  * R tutorial http://www.cyclismo.org/tutorial/R/
  * Software Carpentry R module http://swcarpentry.github.io/r-novice-inflammation/
  * R language introduction https://cran.r-project.org/doc/manuals/R-intro.html
- 
+ * Julia Docs https://docs.julialang.org 
