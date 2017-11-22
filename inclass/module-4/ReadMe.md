@@ -9,3 +9,18 @@ Documentation licensed under CC by SA 3.0.
 The data used in this example is from the Lahman’s Baseball Database
 (http://www.seanlahman.com/baseball-archive/statistics/)
 
+To run the example on the cluster run
+```
+sbatch jobfile.sh
+```
+
+To see if it is currently running run 
+```
+squeue -u $USER
+```
+
+to see if it ran run
+```
+sacct
+```
+
