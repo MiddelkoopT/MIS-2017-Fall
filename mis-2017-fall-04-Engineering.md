@@ -97,9 +97,58 @@ entire workflow including smaller data and known good solutions.
 ### Reading
  * Scientific Workflows: http://www.pnl.gov/computing/technologies/sci_workflow.stm
 
+## R
+
+The R language is used extensively in industry and academia and is an
+open source alternative to many expensive statistical software
+packages.  R utilizes a shell like the rest of the tools covered in
+this course and allows for easy automation for statistical analysis tasks.
+
+To run R you must first load the module, then run it on the cluster
+```
+module load R/R-3.2.3 
+srun --pty R
+```
+
+In R you can quit by running `quit(save='no')` or by pressing `control-d`.
+
+Students that are running MobaXterm can display graphs (this may be
+slow over wireless or from home).  To test this in the R shell run the
+following:
+
+```R 
+plot(1) 
+```
+
+To write a plot to a PNG file (supported by most browsers) adapt the example below
+
+```R
+png(filename = "Rplot%03d.png")
+d <- read.csv("http://www.cyclismo.org/tutorial/R/_static/simple.csv",header=TRUE)
+plot(velocity~mass,d)
+dev.off()
+```
+
+To view the file you can either use a "sftp" client or commit it to
+the git repository.  MobaXterm has a built in sftp client (sftp tab on
+side) and there is an excellent open source sftp client for windows
+WinSCP (https://winscp.net).  ChromeOS (Chomebooks) can use the SFTP
+button/client in the secure shell app used in this class that allows
+access to the files via the built-in file browser.
+
+
+## Reading
+ * Introduction to R and Statistics for IMSE 4410
+   * https://github.com/MiddelkoopT/Stats-2016-Spring/blob/master/stats-2016-00-Introduction.Rmd (R markdown)
+   * https://github.com/MiddelkoopT/Stats-2016-Spring/blob/master/stats-2016-00-Introduction.pdf (pdf)
+
 
 ## References
  * ISBB Chapter 8 - Business Processes (https://bus206.pressbooks.com/chapter/chapter-9)
  * Cloud Native:
    * https://www.oreilly.com/learning/the-cloud-native-application
    * https://www.oreilly.com/ideas/the-evolution-of-devops
+ * R tutorial http://www.cyclismo.org/tutorial/R/
+ * Software Carpentry R module http://swcarpentry.github.io/r-novice-inflammation/
+ * R language introduction https://cran.r-project.org/doc/manuals/R-intro.html
+ 
