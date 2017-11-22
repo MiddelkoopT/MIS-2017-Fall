@@ -224,9 +224,7 @@ And we can also just get a portion of the data.
 curl -sk $API/projects/926 |jq .description
 ```
 
-For a more in depth see
-the [gitlabs-api.sh](incluass/module-4/gitlabs-api.sh) example for
-module 4
+For a more in depth see the [gitlabs-api.sh](inclass/module-4/gitlabs-api.sh) example for module 4.
 
 
 ## References
