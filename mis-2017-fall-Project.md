@@ -123,6 +123,24 @@ The project will be graded on the following areas:
 Submit the commit-id and URL to your "mis-*" git repository to the
 assignment posted on the course website.
 
+## Unsupported Notes
+The following notes are unsupported but should help students install,
+configure, and use additional packages.  These are unsupported.
+
+Install Python xlsx support (https://openpyxl.readthedocs.io/en/default/)
+```
+pip3 install --user --upgrade pip
+~/.local/bin/pip3 install --user openpyxl
+```
+
+Simple python to read data in the cell
+```python
+import openpyxl
+wb = openpyxl.load_workbook(filename = 'simple.xlsx')
+ws = wb.active
+print(ws['A1'].value)
+```
+
 ## References
 * Engineering Workflow [Example](inclass/module-4)
 * SLURM on the cluste http://docs.rnet.missouri.edu/SLURM/slurm
