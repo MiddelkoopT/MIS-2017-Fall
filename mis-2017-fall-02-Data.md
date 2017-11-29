@@ -39,7 +39,7 @@ is [JSON](http://www.json.org/).  Example:
  * JSON data format and specification: http://www.json.org/
  * Julia https://docs.julialang.org
 
-### Hands On
+### Hands On Julia
 
 [Julia](https://docs.julialang.org) is an Open Source
 scientific/engineering language loosely based on Matlab but
@@ -89,6 +89,8 @@ To exit Julia either press the `control-d` key or run the exit function.
 ```Julia
 exit()
 ```
+
+### Hands-On Python
 
 [Python](http://python.org) is an popular Open Source language for
 scripting and doing data processing.  In this class will be using
