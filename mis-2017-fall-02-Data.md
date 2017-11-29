@@ -53,6 +53,7 @@ example in it.  Run the following test to ensure the data is formatted
 correctly.
 
 ```bash
+echo '{"Apple": 1, "Banana": 2, "Carrot": [100, 200, 300]}' > data.json 
 jq . data.json
 ```
 
@@ -86,6 +87,38 @@ d["Apple"]+d["Banana"]
 
 To exit Julia either press the `control-d` key or run the exit function.
 ```Julia
+exit()
+```
+
+[Python](http://python.org) is an popular Open Source language for
+scripting and doing data processing.  In this class will be using
+Python 3.
+
+To start an interactive Python 3 shell on a node run the following command:
+```bash
+srun --pty python3
+```
+
+Then enter the following commands to load the JSON data.
+```python
+import json
+f=open("data.json")
+d=json.load(f)
+f.close()
+```
+
+Show the data structure in Python
+```
+d
+```
+
+Add "Apples and Banana's"
+```python
+d["Apple"]+d["Banana"]
+```
+
+To exit Python either press the `control-d` key or run the exit function.
+```python
 exit()
 ```
 
