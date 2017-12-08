@@ -21,7 +21,8 @@ the importance of IT and emerging trends in IT.
 ## Security and Ethics
 
 ### Reading
- * ISBB Chapter 12 - Ethics https://bus206.pressbooks.com/chapter/chapter-12
+* ISBB Chapter 6 - Security (https://bus206.pressbooks.com/chapter/chapter-6/)
+* ISBB Chapter 12 - Ethics https://bus206.pressbooks.com/chapter/chapter-12
 
 ## Optional Material
 
@@ -36,6 +37,7 @@ analitics have on MIS systems.
  * https://www.oreilly.com/ideas/i-data-scienced-monitoring-data-and-so-can-you
 
 ## References
+ * ISBB Chapter 6 - Security (https://bus206.pressbooks.com/chapter/chapter-6/)
  * ISBB Chapter 7 - Does IT Matter https://bus206.pressbooks.com/chapter/chapter-7
  * ISBB Chapter 12 - Ethics https://bus206.pressbooks.com/chapter/chapter-12
  * ISBB Chapter 13 - Future Trends https://bus206.pressbooks.com/chapter/chapter-13
