@@ -7,7 +7,10 @@ Documentation licensed under CC by SA 3.0.
 ## Course Structure.
 
 1. Background: Context, history, and basics about an engineering information technology
-2. Technology (1,2,3 Solve): 1. Hello - get the technology working. 2. Textbook Example - do something easy. 3. Benchmark and reference problems (Assignment)
+2. Technology (1,2,3 Solve): 
+   1. Hello - get the technology working. 
+   2. Textbook Example - do something easy. 
+   3. Benchmark and reference problems (Assignment)
 3. Engineering: Solve a problem (Assignment or Project).
 
 ## Resources
